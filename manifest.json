@@ -1,0 +1,24 @@
+{
+	"manifest_version": 3,
+	"name": "washee",
+	"version": "1.0",
+	"description": "how do i get him off",
+	"icons": {
+	  "16": "washee.png",
+	  "48": "washee.png",
+	  "128": "washee.png"
+	},
+	"content_scripts": [
+	  {
+		"matches": ["<all_urls>"],
+		"js": ["content.js"]
+	  }
+	],
+	"web_accessible_resources": [
+	  {
+		"resources": ["washee.png"],
+		"matches": ["<all_urls>"]
+	  }
+	]
+  }
+  
